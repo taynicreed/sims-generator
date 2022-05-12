@@ -1,5 +1,6 @@
 #sims4 randomizer
 #updated aug 15 - add Cottage Living
+#updated 5/11 - fixed button background colors
 
 #FUTURE UPDATES:
 # add ability to check expansion/game packs
@@ -14,7 +15,7 @@ window.geometry('500x450')
 window.configure(bg="palegreen")
 
 #top
-topLbl = Label(window, text="Sims 4 Randomizer          ", bg="palegreen",
+topLbl = Label(window, text="Sims 4 Randomizer", bg="palegreen",
                font=("Chalkboard SE", 30))
 topLbl.grid(column=1, row=0, sticky=W)
 
@@ -242,19 +243,19 @@ def save():
 blankLbl = Label(window, text="", bg="palegreen")
 blankLbl.grid(column=0, row=10)
 
-rollallBtn = Button(window, text="Roll All", font=("Arial", 14), bg="white",
-                       fg="green",  command=clickall)
+rollallBtn = Button(window, text="Roll All", font=("Arial", 14), highlightbackground="palegreen",
+                    fg="green",  command=clickall)
 rollallBtn.grid(column=1, row=11, sticky=W)
 
-rollslctBtn = Button(window, text="Roll Selected", font=("Arial", 14), bg="white",
+rollslctBtn = Button(window, text="Roll Selected", font=("Arial", 14), highlightbackground="palegreen",
                      fg="green", command=clickslct)
 rollslctBtn.grid(column=0, row=11, stick=W)
 
-saveBtn = Button(window, text="Save", font=("Arial", 14), bg="white",
+saveBtn = Button(window, text="Save", font=("Arial", 14), highlightbackground="palegreen",
                        fg="green", command=save)
 saveBtn.grid(column=0, row=12, sticky=W)
 
-resetBtn = Button(window, text="Reset", font=("Arial", 14), bg="white",
+resetBtn = Button(window, text="Reset", font=("Arial", 14), highlightbackground="palegreen",
                        fg="green", command=reset)
 resetBtn.grid(column=0, row=13, sticky=W)
 
